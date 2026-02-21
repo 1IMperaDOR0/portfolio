@@ -1,8 +1,11 @@
 import { useState, useEffect } from "react"
+import { useLanguage } from "../context/useLanguage"
+import { useTranslation } from "../hooks/useTranslation"
 
 export default function Menu() {
-    const [lang, setLang] = useState("EN")
+    const { lang, setLang } = useLanguage()
     const [theme, setTheme] = useState("light")
+    const t = useTranslation()
 
     const toggleButton = (value: string, current: string) => `
     flex-1 flex justify-center items-center cursor-pointer rounded-3xl transition duration-300
@@ -65,19 +68,19 @@ export default function Menu() {
                 `}
             >
                 <li onClick={() => scrollToSection("home")} className={linkClass("home")}>
-                    Home
+                    {t.home}
                 </li>
 
                 <li onClick={() => scrollToSection("skills")} className={linkClass("skills")}>
-                    Skills
+                    {t.skills}
                 </li>
 
                 <li onClick={() => scrollToSection("projects")} className={linkClass("projects")}>
-                    Projects
+                    {t.projects}
                 </li>
 
                 <li onClick={() => scrollToSection("contacts")} className={linkClass("contacts")}>
-                    Contacts
+                    {t.contacts}
                 </li>
             </ul>
             

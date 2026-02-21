@@ -1,18 +1,20 @@
 import LucasSena from '../assets/lucas.png';
+import { useTranslation } from '../hooks/useTranslation';
 
 export default function Home() {
+    const t = useTranslation();
     return (
         <div className="flex justify-between items-center gap-10 min-h-[calc(100vh+65px)] py-25 lg:py-0 home">
             <div className="max-w-[500px]">
                 <h2 className="font-bold text-5xl">Hello World!</h2>
                 <h1 className="font-bold text-8xl leading-[80px]">I am <span className="text-[#496977]">Lucas <br/>Sena</span></h1>
-                <p className="pt-3 text-2xl">Student of Software Engineer, UX/UI, Programmer Front-end, Python, Java and <b>+</b></p>
+                <p className="pt-3 text-2xl">{t.student}</p>
                 <a
-                    href="../../public/Currículo.pdf"
-                    download
+                    href="curriculo.pdf"
+                    download="curriculo.pdf"
                     className="inline-block bg-[#AC6532] text-[#FFF9F2] hover:bg-[#493222] hover:text-[#CED6DA] hover:scale-105 transition duration-300 ease-in-out text-2xl font-semibold py-4 px-12 mt-5 rounded-full cursor-pointer"
                 >
-                    <i className="fa-solid fa-download"></i> Download CV
+                    <i className="fa-solid fa-download"></i> {t.download}
                 </a>
             </div>
             <div className="max-w-100 max-h-100 bg-[#496977] rounded-3xl hover:scale-105 hover:rotate-2 transition duration-500 ease-in-out">

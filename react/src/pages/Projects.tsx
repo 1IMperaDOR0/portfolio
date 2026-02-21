@@ -1,6 +1,8 @@
 import Portfolio from '../assets/portfolio-preview.png';
 import PassaABola from '../assets/passa-a-bola-preview.png';
 import Melodia from '../assets/melodia-preview.png';
+import Cinebox from '../assets/cinebox-preview.png';
+import SistemaGrafica from '../assets/sistema-grafica-python-preview.png';
 
 interface ProjectCardProps {
     title: string;
@@ -77,8 +79,24 @@ export default function Projects() {
             description: "Melodia is a digital music platform that connects artists and listeners, offering playlist creation and the discovery of new talent.",
             tech: ["React", "TypeScript", "TailwindCSS"],
             github: "https://github.com/1IMperaDOR0/melodia.github.io",
-            demo: "#",
+            demo: "https://1imperador0.github.io/melodia.github.io/",
             image: Melodia,
+        },
+        {
+            title: "Cinebox Website",
+            description: "CineBox is a simple application that consumes a mocked movie API to display an interactive catalog.",
+            tech: ["React", "TypeScript", "TailwindCSS"],
+            github: "https://github.com/1IMperaDOR0/cinebox.github.io",
+            demo: "https://1imperador0.github.io/cinebox.github.io/",
+            image: Cinebox,
+        },
+                {
+            title: "CLI Graphic Management System",
+            description: "A Python CLI simulator that allows you to manage graphic products, register new options, and calculate budgets based on materials, printing, and user-defined profit.",
+            tech: ["Python", "CLI"],
+            github: "https://github.com/1IMperaDOR0/sistema-de-gestao-grafica-cli",
+            demo: "https://github.com/1IMperaDOR0/sistema-de-gestao-grafica-cli",
+            image: SistemaGrafica,
         }
     ];
 

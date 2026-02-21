@@ -6,7 +6,7 @@ body {
   overflow-x: hidden;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .home {
         flex-direction: column;
         text-align: center;
