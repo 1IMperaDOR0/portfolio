@@ -4,6 +4,7 @@ import { Autoplay, EffectCoverflow } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import './Skills.css';
+import { useTranslation } from '../hooks/useTranslation';
 
 interface SkillCardProps {
     title: string;
@@ -62,6 +63,7 @@ const SkillCard = ({ title, skills, isActive }: SkillCardProps) => {
 };
 
 const Skills = () => {
+    const t = useTranslation();
     const [activeIndex, setActiveIndex] = useState(0);
     const categories = [
         {
@@ -69,11 +71,11 @@ const Skills = () => {
             skills: ["Figma", "HTML5", "CSS3", "JavaScript", "TypeScript", "Tailwindcss", "React", "Dart", "Flutter"]
         },
         {
-            title: "Tools and Others",
+            title: t.tools,
             skills: ["Git", "GitHub", "VSCode", "Python", "Packet Tracer", "Arduino/Esp32", "Node-RED"]
         },
         {
-            title: "Currently Learning",
+            title: t.learning,
             skills: ["Excel", "Pandas", "Numpy", "Matplotlib", "SQL", "Java", "Linux", "Kali Linux"],
         },
         {
@@ -81,18 +83,18 @@ const Skills = () => {
             skills: ["Figma", "HTML5", "CSS3", "JavaScript", "TypeScript", "Tailwindcss", "React", "Dart", "Flutter"]
         },
         {
-            title: "Tools and Others",
+            title: t.tools,
             skills: ["Git", "GitHub", "VSCode", "Python", "Packet Tracer", "Arduino/Esp32", "Node-RED"]
         },
         {
-            title: "Currently Learning",
+            title: t.learning,
             skills: ["Excel", "Pandas", "Numpy", "Matplotlib", "SQL", "Java", "Linux", "Kali Linux"],
         }
     ];
 
     return (
         <div>
-            <h2 className="text-6xl font-bold text-center text-black">Skills</h2>
+            <h2 className="text-6xl font-bold text-center text-black">{t.skills}</h2>
 
             <div className="overflow-x-hidden w-full">
                 <Swiper

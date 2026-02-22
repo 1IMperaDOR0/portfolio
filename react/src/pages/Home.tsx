@@ -6,8 +6,8 @@ export default function Home() {
     return (
         <div className="flex justify-between items-center gap-10 min-h-[calc(100vh+65px)] py-25 lg:py-0 home">
             <div className="max-w-[500px]">
-                <h2 className="font-bold text-5xl">Hello World!</h2>
-                <h1 className="font-bold text-8xl leading-[80px]">I am <span className="text-[#496977]">Lucas <br/>Sena</span></h1>
+                <h2 className="font-bold text-5xl">Hello, World!</h2>
+                <h1 className="font-bold text-8xl leading-[80px]">{t.i} <span className="text-[#496977]">Lucas Sena</span></h1>
                 <p className="pt-3 text-2xl">{t.student}</p>
                 <a
                     href="curriculo.pdf"

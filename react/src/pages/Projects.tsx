@@ -3,6 +3,7 @@ import PassaABola from '../assets/passa-a-bola-preview.png';
 import Melodia from '../assets/melodia-preview.png';
 import Cinebox from '../assets/cinebox-preview.png';
 import SistemaGrafica from '../assets/sistema-grafica-python-preview.png';
+import { useTranslation } from '../hooks/useTranslation';
 
 interface ProjectCardProps {
     title: string;
@@ -57,10 +58,11 @@ const ProjectCard = ({ title, description, tech, github, demo, image }: ProjectC
 };
 
 export default function Projects() {
+    const t = useTranslation();
     const projects = [
         {
             title: "Portfolio Website",
-            description: "Personal portfolio built with React and Vite to showcase projects and skills.",
+            description: t.portfolio,
             tech: ["React", "TypeScript", "TailwindCSS"],
             github: "https://github.com/1IMperaDOR0/portfolio",
             demo: "#",
@@ -68,7 +70,7 @@ export default function Projects() {
         },
         {
             title: "Passa a Bola App",
-            description: "An app designed to strengthen women's football by connecting athletes, clubs, and fans on a digital platform.",
+            description: t.passaabola,
             tech: ["Dart", "Flutter", "Firebase"],
             github: "https://github.com/Caioncaminha/passabola",
             demo: "https://github.com/Caioncaminha/passabola",
@@ -76,15 +78,15 @@ export default function Projects() {
         },
         {
             title: "Melodia Website",
-            description: "Melodia is a digital music platform that connects artists and listeners, offering playlist creation and the discovery of new talent.",
+            description: t.melodia,
             tech: ["React", "TypeScript", "TailwindCSS"],
             github: "https://github.com/1IMperaDOR0/melodia.github.io",
             demo: "https://1imperador0.github.io/melodia.github.io/",
             image: Melodia,
         },
         {
-            title: "Cinebox Website",
-            description: "CineBox is a simple application that consumes a mocked movie API to display an interactive catalog.",
+            title: "CineBox Website",
+            description: t.cinebox,
             tech: ["React", "TypeScript", "TailwindCSS"],
             github: "https://github.com/1IMperaDOR0/cinebox.github.io",
             demo: "https://1imperador0.github.io/cinebox.github.io/",
@@ -92,7 +94,7 @@ export default function Projects() {
         },
                 {
             title: "CLI Graphic Management System",
-            description: "A Python CLI simulator that allows you to manage graphic products, register new options, and calculate budgets based on materials, printing, and user-defined profit.",
+            description: t.sistemagrafico,
             tech: ["Python", "CLI"],
             github: "https://github.com/1IMperaDOR0/sistema-de-gestao-grafica-cli",
             demo: "https://github.com/1IMperaDOR0/sistema-de-gestao-grafica-cli",
@@ -103,7 +105,7 @@ export default function Projects() {
     return (
         <div>
             <h2 className="text-5xl font-bold text-center mb-12">
-                Projects
+                {t.projects}
             </h2>
             <div className="flex flex-wrap justify-center gap-10">
                 {projects.map((project, index) => (
