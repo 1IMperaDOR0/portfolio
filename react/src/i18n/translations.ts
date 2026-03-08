@@ -14,7 +14,8 @@ export const translations = {
     melodia: "Melodia is a digital music platform that connects artists and listeners, offering playlist creation and the discovery of new talent.",
     cinebox: "CineBox is a simple application that consumes a mocked movie API to display an interactive catalog.",
     sistemagrafico: "A Python CLI simulator that allows you to manage graphic products, register new options, and calculate budgets based on materials, printing, and user-defined profit.",
-    contato: "Did you like my portfolio and/or some of my projects? Get in touch:"
+    contato: "Did you like my portfolio and/or some of my projects? Get in touch:",
+    footer: "All rights reserved."
   },
   PT: {
     home: "Início",
@@ -31,6 +32,7 @@ export const translations = {
     melodia: "Melodia é uma plataforma digital de música que conecta artistas e ouvintes, oferecendo criação de playlists e descoberta de novos talentos.",
     cinebox: "CineBox é uma aplicação simples que consome uma API de filmes simulada para exibir um catálogo interativo.",
     sistemagrafico: "Um simulador CLI em Python que permite gerenciar produtos gráficos, registrar novas opções e calcular orçamentos com base em materiais, impressão e lucro definido pelo usuário.",
-    contato: "Gostou do meu portfólio e/ou de algum dos meus projetos? Entre em contato:"
+    contato: "Gostou do meu portfólio e/ou de algum dos meus projetos? Entre em contato:",
+    footer: "Todos os direitos reservados."
   }
 }

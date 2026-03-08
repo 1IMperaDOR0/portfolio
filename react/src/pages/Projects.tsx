@@ -103,7 +103,7 @@ export default function Projects() {
     ];
 
     return (
-        <div>
+        <div className='py-15'>
             <h2 className="text-5xl font-bold text-center mb-12">
                 {t.projects}
             </h2>

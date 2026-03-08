@@ -93,9 +93,8 @@ const Skills = () => {
     ];
 
     return (
-        <div>
+        <div className='py-15'>
             <h2 className="text-6xl font-bold text-center text-black">{t.skills}</h2>
-
             <div className="overflow-x-hidden w-full">
                 <Swiper
                     modules={[Autoplay, EffectCoverflow]}

@@ -3,7 +3,7 @@ import { useTranslation } from "../hooks/useTranslation";
 export default function Contacts() {
     const t = useTranslation();
     return (
-        <div className="flex flex-col justify-center items-center text-center">
+        <div className="flex flex-col justify-center items-center text-center py-15">
             <h2 className="text-5xl font-bold text-center mb-8">{t.contacts}</h2>
             <p className="mb-10">{t.contato}</p>
             <div className="flex flex-col lg:flex-row md:flex-row gap-5">
