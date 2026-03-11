@@ -1,4 +1,4 @@
-import Portfolio from '../assets/portfolio-preview.png';
+import Portfolio from '../assets/portfolio-desktop-preview.png';
 import PassaABola from '../assets/passa-a-bola-preview.png';
 import Melodia from '../assets/melodia-preview.png';
 import Cinebox from '../assets/cinebox-preview.png';
