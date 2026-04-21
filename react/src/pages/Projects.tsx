@@ -93,11 +93,11 @@ export default function Projects() {
             image: Cinebox,
         },
                 {
-            title: "CLI Graphic Management System",
-            description: t.sistemagrafico,
+            title: t.sistemagrafico1,
+            description: t.sistemagrafico2,
             tech: ["Python", "CLI"],
-            github: "https://github.com/1IMperaDOR0/sistema-de-gestao-grafica-cli",
-            demo: "https://github.com/1IMperaDOR0/sistema-de-gestao-grafica-cli",
+            github: "https://github.com/1IMperaDOR0/sistema-de-gestao-grafica",
+            demo: "https://github.com/1IMperaDOR0/sistema-de-gestao-grafica",
             image: SistemaGrafica,
         }
     ];
