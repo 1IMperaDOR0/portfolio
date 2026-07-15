@@ -72,8 +72,8 @@ export default function Projects() {
             title: "Passa a Bola App",
             description: t.passaabola,
             tech: ["Dart", "Flutter", "Firebase"],
-            github: "https://github.com/Caioncaminha/passabola",
-            demo: "https://github.com/Caioncaminha/passabola",
+            github: "https://github.com/gabsakura/passa-a-bola",
+            demo: "https://flutter-app-f547b.web.app/",
             image: PassaABola,
         },
         {
